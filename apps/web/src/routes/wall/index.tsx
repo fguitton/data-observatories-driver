@@ -835,6 +835,7 @@ function WallApp() {
                     layer={backgroundLayer}
                     col={myViewport.x / SCREEN_W}
                     row={myViewport.y / SCREEN_H}
+                    getNow={engine ? () => engine.getServerTime() : Date.now}
                 />
             )}
             {stageContent}
